@@ -3,6 +3,12 @@
 #include <stdlib.h>
 
 #define CANDIDATES_MAX 9
+#define CHARS_MAX 30
+struct Candidate
+{
+    char    Name[CHARS_MAX];
+    int     Votes;
+};
 
 int main(int argc, string argv[])
 {
@@ -11,4 +17,8 @@ int main(int argc, string argv[])
         printf ("Usage: ./plurality <candidate1> .. <candidate9>\n");
         return EXIT_FAILURE;
     }
+
+    struct Candidate candidate[CANDIDATES_MAX];
+
+    
 }
